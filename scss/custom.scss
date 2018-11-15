@@ -82,7 +82,6 @@ $body-color: $black;
 $font-family-sans-serif:      'Barlow', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import url('https://fonts.googleapis.com/css?family=Barlow:200,600');
 
 .form-control:focus {
@@ -90,12 +89,16 @@ $font-family-sans-serif:      'Barlow', -apple-system, BlinkMacSystemFont, "Sego
     box-shadow: 0 0 0 0.2rem rgba(23, 237, 143, 0.25);
 }
 
+.btn {
+    font-weight: 600;
+}
+
 .navbar-brand {
     margin: 60px auto;
 }
 
 .background-fashion {
-    background: url('../../img/store-984393_1920.jpg') no-repeat;
+    background: url('../../img/store-984393_1920.jpg') no-repeat top center;
 }
 
 .form-container {

@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="dist/css/custom.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <body class="background-fashion">
@@ -38,70 +39,96 @@
         <h2 class="mb-3">Venda na Mirtilo</h2>
         <form class="needs-validation" novalidate="">
           <div class="row">
-            <div class="col-md-6 mb-3">
-              <input type="text" class="form-control" id="firstName" placeholder="Nome" value="" required="">
+            <div class="col-md-4 mb-3">
+              <input type="text" class="form-control form-control-lg" id="firstName" placeholder="Nome" value="" required="">
               <div class="invalid-feedback">
-                Valid first name is required.
+                Nome é obrigatório.
               </div>
             </div>
-            <div class="col-md-6 mb-3">
-              <input type="text" class="form-control" id="lastName" placeholder="Sobrenome" value="" required="">
+            <div class="col-md-8 mb-3">
+              <input type="text" class="form-control form-control-lg" id="lastName" placeholder="Sobrenome" value="" required="">
               <div class="invalid-feedback">
-                Valid last name is required.
+                Sobrenome é obrigatório.
               </div>
             </div>
           </div>
 
-          <div class="mb-3">
-            <input type="email" class="form-control" id="email" placeholder="Email">
-            <div class="invalid-feedback">
-              Please enter a valid email address for shipping updates.
+          <div class="row">
+            <div class="col-md-7 mb-3">
+              <input type="email" class="form-control form-control-lg" id="email" placeholder="Email" required>
+              <div class="invalid-feedback">
+                Email é obrigatório.
+              </div>
             </div>
-          </div>
-
-          <div class="mb-3">
-            <input type="text" class="form-control" id="address2" placeholder="Marca">
+            <div class="col-md-5 mb-3">
+              <input type="text" class="form-control form-control-lg" id="phone" placeholder="Telefone" required="">
+              <div class="invalid-feedback">
+                Telefone é obrigatório.
+              </div>
+            </div>
           </div>
 
           <div class="row">
             <div class="col-md-4 mb-3">
-              <select class="custom-select d-block w-100" id="state" required="">
-                <option value="">Estado...</option>
-                <option>California</option>
-              </select>
+              <input type="text" class="form-control form-control-lg" id="address2" placeholder="Marca" required>
               <div class="invalid-feedback">
-                Please provide a valid state.
+                Marca é obrigatória.
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <input type="text" class="form-control" id="zip" placeholder="CEP" required="">
+              <input type="text" class="form-control form-control-lg" id="zip" placeholder="Cidade" required="">
               <div class="invalid-feedback">
-                Zip code required.
+                Cidade é obrigatório.
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <input type="text" class="form-control" id="phone" placeholder="Telefone" required="">
-              <div class="invalid-feedback">
-                Please enter your shipping address.
+                <select class="form-control form-control-lg" id="state" required="">
+                  <option value="" disabled selected hidden>Estado...</option>
+                  <option value="AC">AC</option>
+                  <option value="AL">AL</option>
+                  <option value="AP">AP</option>
+                  <option value="AM">AM</option>
+                  <option value="BA">BA</option>
+                  <option value="CE">CE</option>
+                  <option value="DF">DF</option>
+                  <option value="ES">ES</option>
+                  <option value="GO">GO</option>
+                  <option value="MA">MA</option>
+                  <option value="MT">MT</option>
+                  <option value="MS">MS</option>
+                  <option value="MG">MG</option>
+                  <option value="PA">PA</option>
+                  <option value="PB">PB</option>
+                  <option value="PR">PR</option>
+                  <option value="PE">PE</option>
+                  <option value="PI">PI</option>
+                  <option value="RJ">RJ</option>
+                  <option value="RN">RN</option>
+                  <option value="RS">RS</option>
+                  <option value="RO">RO</option>
+                  <option value="RR">RR</option>
+                  <option value="SC">SC</option>
+                  <option value="SP">SP</option>
+                  <option value="SE">SE</option>
+                  <option value="TO">TO</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor, selecione o estado de sua marca.
+                </div>
               </div>
-            </div>
           </div>
           <hr class="mb-4">
           <div class="custom-control custom-checkbox">
             <input type="checkbox" class="custom-control-input" id="same-address">
-            <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+            <label class="custom-control-label" for="same-address">Possuo loja virtual</label>
           </div>
           <div class="custom-control custom-checkbox">
             <input type="checkbox" class="custom-control-input" id="save-info">
-            <label class="custom-control-label" for="save-info">Save this information for next time</label>
+            <label class="custom-control-label" for="save-info">Receber emails ocasionais sobre a Mirtilo</label>
           </div>
 
           <hr class="mb-4">
-          <button class="btn btn-primary btn-lg btn-block" type="submit">Continuar <i class="ic-icon ic-icon-arrow-right-small-bold"></i></button>
-
-          <hr class="mb-4">
-          <a href="http://api.whatsapp.com/send?phone=5561996251919" target="_blank">
-          <button class="btn btn-secondary btn-lg btn-block" type="submit">Contatar no WhatsApp <i class="fab fa-whatsapp"></i></button></a>
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Continuar <i class="fas fa-angle-right"></i></button>
         </form>
       </div>
     </div>
@@ -184,7 +211,8 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 offset-md-3">
-      <button class="btn btn-secondary btn-lg btn-block">Começar <i class="ic-icon ic-icon-arrow-right-small-bold"></i></button>
+      <a href="http://api.whatsapp.com/send?phone=5561996251919" target="_blank">
+      <button class="btn btn-secondary btn-lg btn-block" type="submit">Contatar no WhatsApp <i class="fab fa-whatsapp"></i></button></a>
     </div>
   </div>
 </div>
@@ -201,6 +229,7 @@
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
@@ -210,6 +239,38 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script>
+    $(document).ready(function(){
+      var options =  {
+        onKeyPress: function(phone, e, field, options) {
+          var masks = ['(00) 0000-0000', '(00) 00000-0000'];
+          var mask = (phone.length >= 14) ? masks[1] : masks[0];
+          $('#phone').mask(mask, options);
+      }};
+
+      $('#phone').mask('(00) 0000-0000', options);
+    });
+  </script>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
 </body>
 
 </html>
