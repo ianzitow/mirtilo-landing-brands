@@ -1,0 +1,152 @@
+//
+// Color system
+//
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+
+$blue:    #1449BF;
+$indigo:  #6610f2 !default;
+$purple:  #9338FF;
+$pink:    #E51C72;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #16ED8E;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+$primary:       $blue !default;
+$secondary:     $green !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$border-radius:               0;
+$border-radius-lg:            0;
+$border-radius-sm:            0;
+
+$body-color: $black;
+
+$font-family-sans-serif:      'Barlow', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import url('https://fonts.googleapis.com/css?family=Barlow:200,600');
+
+.form-control:focus {
+    border-color: $green;
+    box-shadow: 0 0 0 0.2rem rgba(23, 237, 143, 0.25);
+}
+
+.navbar-brand {
+    margin: 60px auto;
+}
+
+.background-fashion {
+    background: url('../../img/store-984393_1920.jpg') no-repeat;
+}
+
+.form-container {
+    background: $white;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+.bg-gradient {
+    background: linear-gradient(to top, transparent, rgba(0,0,0,0.5));
+}
+
+.white-background {
+    background: $white;
+}
+
+.main-features {
+    padding: 50px;
+    text-align: center;
+    background: $white;
+}
+
+.elevator-pitch {
+    background: $blue;
+    padding: 38px;
+    text-align: center;
+    color: $white;
+}
+
+@media (min-width: 576px) { 
+    .elevator-pitch {
+        padding: 114px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-featured {
+        margin: 45px;
+    }
+}
+
+.featured {
+    padding: 10px;
+}
+
+.featured-container {
+    background: $gray-100;
+    padding: 25%;
+    margin: 0 0 20px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}

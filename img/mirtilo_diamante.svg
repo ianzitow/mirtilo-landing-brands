@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#1449BE;stroke-width:4;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#16EC8E;stroke-width:4;stroke-miterlimit:10;}
+	.st2{fill:#1449BE;}
+</style>
+<g>
+	<g>
+		<line class="st0" x1="12.5" y1="34" x2="52.5" y2="34"/>
+		<line class="st0" x1="32.1" y1="58" x2="23.5" y2="35.3"/>
+		<polygon class="st2" points="43,23.1 43,28.5 50.2,35 32.1,55 13.8,35 21,28.7 21,23.3 8.2,34.7 32.1,61 55.8,34.7 		"/>
+		<line class="st1" x1="24" y1="24" x2="40" y2="24"/>
+		<line class="st0" x1="32.1" y1="58" x2="41" y2="35.3"/>
+	</g>
+	<g>
+		<g>
+			<line class="st0" x1="32" y1="17" x2="32" y2="6"/>
+		</g>
+		<g>
+			<g>
+				<line class="st0" x1="41" y1="19" x2="45" y2="12"/>
+			</g>
+			<g>
+				<line class="st0" x1="23" y1="19" x2="19" y2="12"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
