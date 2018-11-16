@@ -34,19 +34,19 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-6 offset-md-3 order-md-1">
+      <div class="col-sm-10 offset-sm-1 col-xl-6 offset-xl-3 order-md-1">
         <div class="form-container">
-        <h2 class="mb-3">Venda na Mirtilo</h2>
-        <form class="needs-validation" novalidate="">
+        <h2 class="mb-3">Começar a vender na Mirtilo</h2>
+        <form class="needs-validation" action="https://mirtilo.us18.list-manage.com/subscribe/post?u=42c27e392526653cab044d3e0&amp;id=6ff998e10b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate="">
           <div class="row">
             <div class="col-md-4 mb-3">
-              <input type="text" class="form-control form-control-lg" id="firstName" placeholder="Nome" value="" required="">
+              <input type="text" class="form-control form-control-lg" name="FNAME" id="mce-FNAME" placeholder="Nome" value="" required="">
               <div class="invalid-feedback">
                 Nome é obrigatório.
               </div>
             </div>
             <div class="col-md-8 mb-3">
-              <input type="text" class="form-control form-control-lg" id="lastName" placeholder="Sobrenome" value="" required="">
+              <input type="text" class="form-control form-control-lg" name="LNAME" id="mce-LNAME" placeholder="Sobrenome" value="" required="">
               <div class="invalid-feedback">
                 Sobrenome é obrigatório.
               </div>
@@ -55,13 +55,13 @@
 
           <div class="row">
             <div class="col-md-7 mb-3">
-              <input type="email" class="form-control form-control-lg" id="email" placeholder="Email" required>
+              <input type="email" class="form-control form-control-lg" id="mce-EMAIL" name="EMAIL" placeholder="Email" required >
               <div class="invalid-feedback">
                 Email é obrigatório.
               </div>
             </div>
             <div class="col-md-5 mb-3">
-              <input type="text" class="form-control form-control-lg" id="phone" placeholder="Telefone" required="">
+              <input type="text" class="form-control form-control-lg" name="PHONE" id="mce-PHONE" placeholder="Telefone" required="">
               <div class="invalid-feedback">
                 Telefone é obrigatório.
               </div>
@@ -70,19 +70,19 @@
 
           <div class="row">
             <div class="col-md-4 mb-3">
-              <input type="text" class="form-control form-control-lg" id="address2" placeholder="Marca" required>
+              <input type="text" class="form-control form-control-lg" name="BRAND" id="mce-BRAND" placeholder="Marca" required>
               <div class="invalid-feedback">
                 Marca é obrigatória.
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <input type="text" class="form-control form-control-lg" id="zip" placeholder="Cidade" required="">
+              <input type="text" class="form-control form-control-lg" name="CITY" id="mce-CITY" placeholder="Cidade" required="">
               <div class="invalid-feedback">
                 Cidade é obrigatório.
               </div>
             </div>
             <div class="col-md-4 mb-3">
-                <select class="form-control form-control-lg" id="state" required="">
+                <select class="form-control form-control-lg" name="STATE" id="mce-STATE" required="">
                   <option value="" disabled selected hidden>Estado...</option>
                   <option value="AC">AC</option>
                   <option value="AL">AL</option>
@@ -119,14 +119,17 @@
           </div>
           <hr class="mb-4">
           <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="same-address">
-            <label class="custom-control-label" for="same-address">Possuo loja virtual</label>
+              <input type="checkbox" class="custom-control-input" value="1" name="group[3633][1]" id="mce-group[3633]-3633-0">
+              <label class="custom-control-label" for="mce-group[3633]-3633-0">Já possuo uma loja virtual</label>
           </div>
           <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="save-info">
-            <label class="custom-control-label" for="save-info">Receber emails ocasionais sobre a Mirtilo</label>
+              <input type="checkbox" class="custom-control-input" value="2" name="group[3633][2]" id="mce-group[3633]-3633-1">
+              <label class="custom-control-label" for="mce-group[3633]-3633-1">Realizo vendas pelo Instagram, WhatsApp e outras redes sociais</label>
           </div>
-
+          <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" value="4" name="group[3633][4]" id="mce-group[3633]-3633-2">
+              <label class="custom-control-label" for="mce-group[3633]-3633-2">Participo de feiras ou de lojas colaborativas</label>
+          </div>
           <hr class="mb-4">
           <button class="btn btn-primary btn-lg btn-block" type="submit">Continuar <i class="fas fa-angle-right"></i></button>
         </form>
@@ -212,7 +215,7 @@
   <div class="row">
     <div class="col-md-6 offset-md-3">
       <a href="http://api.whatsapp.com/send?phone=5561996251919" target="_blank">
-      <button class="btn btn-secondary btn-lg btn-block" type="submit">Contatar no WhatsApp <i class="fab fa-whatsapp"></i></button></a>
+      <button class="btn btn-secondary btn-lg btn-block" type="submit">Vamos conversar mais <i class="fab fa-whatsapp"></i></button></a>
     </div>
   </div>
 </div>
@@ -245,10 +248,10 @@
         onKeyPress: function(phone, e, field, options) {
           var masks = ['(00) 0000-0000', '(00) 00000-0000'];
           var mask = (phone.length >= 14) ? masks[1] : masks[0];
-          $('#phone').mask(mask, options);
+          $('#mce-PHONE').mask(mask, options);
       }};
 
-      $('#phone').mask('(00) 0000-0000', options);
+      $('#mce-PHONE').mask('(00) 0000-0000', options);
     });
   </script>
   <script>
