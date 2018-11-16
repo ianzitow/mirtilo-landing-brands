@@ -93,12 +93,33 @@ $font-family-sans-serif:      'Barlow', -apple-system, BlinkMacSystemFont, "Sego
     font-weight: 600;
 }
 
+.icon {
+    position: relative;
+    background: $green;
+    fill: $blue;
+    height: 25px;
+    width: 25px;
+    margin: 5px;
+}
+
+.icon-content {
+    display: flex;
+    justify-content: center;
+}
+
 .navbar-brand {
     margin: 60px auto;
 }
 
 .background-fashion {
     background: url('../../img/store-984393_1920.jpg') no-repeat top center;
+}
+
+.contact-container {
+    background: url('../../img/store-984393_1920.jpg') no-repeat bottom center;
+    height: 150px;
+    display: flex;
+    align-items: center;
 }
 
 .form-container {
