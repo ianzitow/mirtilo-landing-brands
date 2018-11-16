@@ -85,8 +85,18 @@ $font-family-sans-serif:      'Barlow', -apple-system, BlinkMacSystemFont, "Sego
 @import url('https://fonts.googleapis.com/css?family=Barlow:200,600');
 
 .form-control:focus {
-    border-color: $green;
-    box-shadow: 0 0 0 0.2rem rgba(23, 237, 143, 0.25);
+    border-bottom: 3px solid $blue;
+    box-shadow: unset;
+    transition: border-color .75s 
+}
+
+.form-title {
+    text-align: center;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1.5px solid $green;
 }
 
 .btn {
