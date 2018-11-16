@@ -129,6 +129,8 @@ $font-family-sans-serif:      'Barlow', -apple-system, BlinkMacSystemFont, "Sego
 
 .contact-container {
     background: url('../../img/store-984393_1920.jpg') no-repeat bottom center;
+    background-color: $blue;
+    background-blend-mode: multiply;
     height: 150px;
     display: flex;
     align-items: center;
