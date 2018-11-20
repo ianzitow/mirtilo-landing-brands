@@ -364,6 +364,50 @@
     drift.load('kza5axcd48cy');
   </script>
   <!-- End of Async Drift Code -->
+
+  <div id="exit-intent" class="d-none">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 offset-sm-1 col-xl-8 offset-xl-2 order-md-1 exit-intent-container">
+          <h1>Experimente nossa plataforma por 60 dias grátis!</h1>
+          <p>Cadastre seu email, entraremos em contato para te oferecer essa oportunidade exclusiva.</p>
+          <form action="https://mirtilo.us18.list-manage.com/subscribe/post?u=42c27e392526653cab044d3e0&amp;id=96072411f7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> 
+              <div class="row mb-4">
+                <div class="col-md-4">
+                  <input type="text" class="form-control required" placeholder="Nome" name="NAME" id="mce-NAME">
+                </div>
+                <div class="col-md-8">
+                  <input class="form-control required email" placeholder="Email" type="email" value="" name="EMAIL" id="mce-EMAIL">
+                </div>
+              </div>
+              <div class="row mb-4">
+                  <button id="submit-exit-intent" type="submit" class="btn btn-lg btn-primary btn-block">Sim, eu quero participar da Mirtilo</button>
+              </div>
+          </form>
+          <div class="row">
+              <button id="close-exit-intent" class="btn btn-light btn-block">Não, não quero mais clientes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  document.addEventListener("mouseleave", function(e){
+    if( e.clientY < 0 )
+    {
+        $('#exit-intent').removeClass('d-none');
+    }
+  }, false);
+
+  $('#close-exit-intent').click(function() {
+    $('#exit-intent').addClass('d-none');
+  });
+
+  $('#submit-exit-intent').click(function() {
+    $('#exit-intent').addClass('d-none');
+  })
+  </script>
 </body>
 
 </html>

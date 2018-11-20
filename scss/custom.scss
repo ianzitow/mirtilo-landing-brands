@@ -138,7 +138,7 @@ $font-family-sans-serif:      'Barlow', -apple-system, BlinkMacSystemFont, "Sego
 
 .form-container {
     background: $white;
-    padding: 40px;
+    padding: 50px;
     margin-bottom: 50px;
 }
 
@@ -187,4 +187,20 @@ $font-family-sans-serif:      'Barlow', -apple-system, BlinkMacSystemFont, "Sego
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
+}
+
+#exit-intent {
+    background:  rgba(20, 73, 191, 0.95);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.exit-intent-container {
+    background: white;
+    padding: 50px;
 }
