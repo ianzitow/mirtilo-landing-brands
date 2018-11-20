@@ -391,14 +391,20 @@
       </div>
     </div>
   </div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ouibounce/0.0.12/ouibounce.js"></script>
   <script>
-  document.addEventListener("mouseleave", function(e){
-    if( e.clientY < 0 )
-    {
-        $('#exit-intent').removeClass('d-none');
-    }
-  }, false);
+  // document.addEventListener("mouseleave", function(e){
+  //   if( e.clientY < 0 )
+  //   {
+  //       $('#exit-intent').removeClass('d-none');
+  //   }
+  // }, false);
+
+  var _ouibounce = ouibounce(false, {
+    callback: function() { 
+      $('#exit-intent').removeClass('d-none');
+     }
+  });
 
   $('#close-exit-intent').click(function() {
     $('#exit-intent').addClass('d-none');
