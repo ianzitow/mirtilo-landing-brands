@@ -142,7 +142,7 @@
                   WhatsApp e outras redes sociais</label>
               </div>
               <hr class="mb-4">
-              <button class="btn btn-primary btn-lg btn-block" type="submit">Continuar <i class="fas fa-angle-right"></i></button>
+              <button id="submit-btn" class="btn btn-primary btn-lg btn-block" type="submit">Continuar <i class="fas fa-angle-right"></i></button>
             </form>
           </div>
         </div>
@@ -287,6 +287,8 @@
 
     gtag('config', 'UA-129351341-1');
 
+    gtag('config', 'AW-805240858');
+
   </script>
 
   <script>
@@ -400,13 +402,35 @@
     }
   }, false);
 
-  $('#close-exit-intent').click(function() {
-    $('#exit-intent').addClass('d-none');
-  });
+  $(document).ready(function() {
 
-  $('#submit-exit-intent').click(function() {
-    $('#exit-intent').addClass('d-none');
-  })
+    function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-805240858/DcxYCMni7o8BEJqA_P8C',
+            'event_callback': callback
+        });
+        return false;
+    }
+
+    $('#close-exit-intent').click(function() {
+      $('#exit-intent').addClass('d-none');
+    });
+
+    $('#submit-exit-intent').click(function() {
+      $('#exit-intent').addClass('d-none');
+      gtag_report_conversion();
+    });
+
+    $( "#submit-btn" ).click(function() {
+      gtag_report_conversion();
+    });
+    
+  });
   </script>
 </body>
 
